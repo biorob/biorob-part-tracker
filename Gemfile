@@ -39,3 +39,7 @@ gem "rolify", ">= 3.2.0"
 
 #simple form
 gem "simple_form", ">= 2.0.4"
+
+
+#settings
+gem 'settingslogic'
