@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-BiorobPartTracker::Application.config.secret_token = 'f5c14e110c5af31741f644b488cc994783fa29cb421cfe42c4fe45c3c779bbbfa6110dc1c2b5f5ecce2ff3e84ada5989c1f2d6ac857fac9cb9aea1b74dc44c52'
+BiorobPartTracker::Application.config.secret_token = '3238c977a1090ca7a3293e8f5d8d137b8a10e27742086e2593d32761e2a46f74073af36f929eb965594d9fbc247cd274f70de369f6807acadab591ab83f832ff'
