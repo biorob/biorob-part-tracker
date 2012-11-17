@@ -28,6 +28,10 @@ end
 
 #authentification
 gem "devise", ">= 2.1.2"
+gem "omniauth"
+gem "omniauth-ldap"
+
+
 
 #authorization
 gem "cancan", ">= 1.6.8"
