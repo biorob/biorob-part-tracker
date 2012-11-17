@@ -1,3 +1,4 @@
+require 'omniauth-ldap'
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
@@ -232,13 +233,13 @@ Devise.setup do |config|
 
   if Settings.ldap_enabled?
     config.omniauth :ldap,
-    :host     => gl.ldap['host'],
-    :base     => gl.ldap['base'],
-    :uid      => gl.ldap['uid'],
-    :port     => gl.ldap['port'],
-    :method   => gl.ldap['method'],
-    :bind_dn  => gl.ldap['bind_dn'],
-    :password => gl.ldap['password']
+    :host     => Settings.ldap['host'],
+    :base     => Settings.ldap['base'],
+    :uid      => Settings.ldap['uid'],
+    :port     => Settings.ldap['port'],
+    :method   => Settings.ldap['method'],
+    :bind_dn  => Settings.ldap['bind_dn'],
+    :password => Settings.ldap['password']
   end
 
 end
