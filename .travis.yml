@@ -1,4 +1,11 @@
 language: ruby
+bundler_args: --without development
 rvm:
   - 1.9.3
+env:
+  - RAILS_ENV=test
+before_script:
+  - "cp config/database.yml.example config/database.yml"
+  - "cp config/biorob-part-tracker.yml.example config/biorob-part-tracker.yml"
+  - "bundle exec rake db:migrate"
 script: "bundle exec rake"
