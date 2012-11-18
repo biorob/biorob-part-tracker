@@ -1,5 +1,9 @@
 language: ruby
 bundler_args: --without development
+branches:
+  only:
+    -master
+    -stable
 rvm:
   - 1.9.3
 env:
