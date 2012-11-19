@@ -2,6 +2,15 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.8'
 gem 'sqlite3'
 
+def darwin_only(require_as)
+  RUBY_PLATFORM.include?('darwin') && require_as
+end
+
+def linux_only(require_as)
+  RUBY_PLATFORM.include?('linux') && require_as
+end
+
+
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
@@ -24,6 +33,15 @@ group :development, :test do
   gem "launchy", ">= 2.1.2"
   gem "capybara", ">= 1.1.3"
   gem "factory_girl_rails", ">= 4.1.0"
+end
+
+group :development do
+  gem 'guard-rspec'
+  gem 'guard-cucumber'
+
+  gem 'rb-fsevent', require: darwin_only('rb-fsevent')
+  gem 'growl',      require: darwin_only('growl')
+  gem 'rb-inotify', require: linux_only('rb-inotify')
 end
 
 #authentification
