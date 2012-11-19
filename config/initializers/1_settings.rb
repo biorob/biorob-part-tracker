@@ -1,6 +1,6 @@
 class Settings < Settingslogic
   source "#{Rails.root}/config/biorob-part-tracker.yml"
-  namespace Rails.env
+  #namespace Rails.env
 
   def ldap_enabled?
     ldap && ldap['enabled']
