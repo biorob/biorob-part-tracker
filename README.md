@@ -1,4 +1,4 @@
-Biorob Part Tracker [![Build Status](https://secure.travis-ci.org/biorob/biorob-part-tracker.png?branch=travis)](https://travis-ci.org/biorob/biorob-part-tracker) [![](https://codeclimate.com/badge.png)](https://codeclimate.com/github/biorob/biorob-part-tracker)
+Biorob Part Tracker [![Build Status](https://secure.travis-ci.org/biorob/biorob-part-tracker.png?branch=master)](https://travis-ci.org/biorob/biorob-part-tracker) [![](https://codeclimate.com/badge.png)](https://codeclimate.com/github/biorob/biorob-part-tracker)
 ===========================================================================================================================================================================================================================================================================================================
 
 This application was generated with the
